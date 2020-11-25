@@ -75,7 +75,15 @@
           <div class="column is-9">
             <div class="content is-medium">
           <h3 class="title is-3">Snippets ¯\_(ツ)_/¯</h3>
-              <%= render(InfoBoxComponent.new()) %>
+              <%= render(InfoBoxComponent.new(javascript: "const test = 'test';")) do |box| %>
+              <% box.with(:title) do %>
+                const
+              <% end %>
+              <% box.with(:body) do %>
+                Block-scoped. Cannot be re-assigned. Not immutable.
+              <% end %>
+              
+            <% end %>
             <div class="box">
               <h4 id="let" class="title is-3">let</h4>
               <article class="message is-primary">
