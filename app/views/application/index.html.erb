@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" >
-  <head>
-    <meta charset="UTF-8">
-    <title>Cheatsheet Concept</title>
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!-- Bulma Version 0.9.0-->
-   
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
- 
-  
-
-    <script src="https://kit.fontawesome.com/dfdcb7635e.js" crossorigin="anonymous"></script>
-
-  </head>
-  <body>
-    <section class="hero is-primary">
+<section class="hero is-primary">
       <div class="hero-body">
         <div class="columns">
           <div class="column is-12">
             <div class="container content">
-              <h1 class="title">Full Stack<em>Developer</em> </h1>
+              <h1 class="title is-1">Nico Roulston</h1>
+              <h1 class="subtitle">Full Stack <em>Developer</em> </h1>
               <h3 class="subtitle">
               A jack of all trades is a master of none, but oftentimes better than a master of one
               </h3>
-              <a href="https://github.com/BulmaTemplates/bulma-templates" target="_blank" class="button is-primary is-large">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Github</span>
-              </a>
             </div>
           </div>
         </div>
@@ -38,37 +16,41 @@
     <section class="section">
       <div class="container">
         <div class="columns">
-          <div class="column is-3">
-            <aside class="is-medium menu">
+          <div class="column is-3 ">
+            <div class="is-medium menu sticky">
               <p class="menu-label">
                 categories
               </p>
               <ul class="menu-list">
-                <li class="is-right"><a href="#const" class="is-active"><i class="fab fa-css3-alt"></i> CSS</a></li>
-                <li><a href="#let" class="is-active"><i class="fab fa-js"></i> JS</a></li>
-                <li><a href="#let" class="is-active"><i class="fab fa-html5"></i> HTML</a></li>
+                <li class="is-right"><a href="#about" class="is-active"><i class="far fa-address-card"></i></i> About</a></li>
+                <li><a href="#projects" class="is-active"><i class="fas fa-code"></i></i>  Projects</a></li>
+                <li><a href="#resume" class="is-active"><i class="far fa-file-alt"></i></i> JSON Resume</a></li>
               </ul>
               <p class="menu-label">
-                More to read...
+                Links
               </p>
               <ul class="menu-list">
-                <li><span class="tag is-white is-medium">Lorem</span></li>
-                <li><span class="tag is-white is-medium">Ipsum</span></li>
-                <li><span class="tag is-white is-medium">Dolor</span></li>
+                <li><a href="#projects" class="tag is-white is-medium"> GitHub</a></li>
+                <li><a href="#projects" class="tag is-white is-medium"></i> Blog</a></li>
+                <li><a href="#projects" class="tag is-white is-medium"></i> bitSized Good</a></li>
+               
               </ul>
-            </aside>
+            </div>
           </div>
           <div class="column is-9">
-            <%= render(ContentSectionsComponent.new(section: :about, title: "Who is Nico? ¯\\_(ツ)_/¯"
-            )) %>
-            <div class="box">
+            <div class="box" id='intro-video'>
               <h4 id="const" class="title is-3">Video introduction</h4>
               <article class="message is-primary">
                 <div class="message-body">
-                  <iframe width="490" height="275" src="https://res.cloudinary.com/project1000hires/video/upload/v1604353331/Nico_Roulston_ea7df8be51.mp4" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="490" height="275" src="https://res.cloudinary.com/project1000hires/video/upload/v1604353331/Nico_Roulston_ea7df8be51.mp4" frameborder="0" allowfullscreen type="video/mp4"></iframe>
                 </div>
               </article>
             </div>
+            <div id='about'>
+            <%= render(ContentSectionsComponent.new(section: :about, title: "Who is Nico? ¯\\_(ツ)_/¯"
+            )) %>
+            </div>
+            
           <h3 class="title is-3">More to Come...</h3>
           <div class="box">
             <h4 id="lorem" class="title is-4">More to come...</h4>
@@ -214,26 +196,5 @@
 </div>
 
 </footer>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
-    
-<script>
-  window.addEventListener('resize', () => {
-  const divs = document.querySelectorAll(".menu-list");
-  if (window.innerWidth < 768){
-    divs.forEach(div => div.classList.add("tags"));
-  }
-  else {
-    divs.forEach(div => div.classList.remove("tags"));
-  }
-});
-  
-  document.addEventListener("DOMContentLoaded", function() {
-	//The first argument are the elements to which the plugin shall be initialized
-	//The second argument has to be at least a empty object or a object with your desired options
-	OverlayScrollbars(document.querySelectorAll("body"), { });
-});
-  
-</script>  
-</body>
-</html>
+
+

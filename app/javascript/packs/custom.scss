@@ -54,6 +54,9 @@ background: linear-gradient(to top right, #524ad0 10%, #D099FA);
 }
 .footer {background-color: white;}
 
-
+.sticky	{
+	position: sticky;
+  	top: 30px;
+}
 
 /* TODO follow the filestrucutre of packs in including the stylesheet from simple-pm */

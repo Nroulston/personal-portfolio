@@ -11,7 +11,7 @@ class ContentSectionsComponent < ViewComponent::Base
       about: [{
         javascript: "(coffee) => { return code }",
         title: "I am a",
-        body: 'Doer, Coder, Father, Husband, Brewer, Developer, Customer Service Enthusiast, Curious Mind '
+        body: 'Doer, Coder, Father, Husband, Brewer, Developer, Customer Service Enthusiast, Curious Mind, Volunteer '
         },
         { javascript: "It's as easy as 0, 10, 11",
         title: "Achievements",
