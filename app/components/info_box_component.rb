@@ -1,8 +1,7 @@
 class InfoBoxComponent < ViewComponent::Base
-  with_content_areas :title, :body
-  attr_accessor :javascript
+  attr_accessor :info_box
 
-  def initialize(javascript:)
-    @javascript = javascript
+  def initialize(info_box:)
+    @info_box = info_box
   end
 end

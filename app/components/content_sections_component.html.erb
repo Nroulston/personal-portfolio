@@ -1,25 +1,6 @@
 <div class="column is-9">
             <div class="content is-medium">
-              <h3 class="title is-3">Snippets ¯\_(ツ)_/¯</h3>
-              <%= render(InfoBoxComponent.new( 
-                javascript: "(coffee) => { return code }"
-              )) do |box| %>
-                <% box.with(:title) do %>
-                  const
-                <% end %>
-                <% box.with(:body) do %>
-                  Block-scoped. Cannot be re-assigned. Not immutable.
-                <% end %>
-              <% end %>
-            <div class="box">
-              <h4 id="let" class="title is-3">let</h4>
-              <article class="message is-primary">
-                <span class="icon has-text-primary">
-                  <i class="fas fa-info-circle"></i>
-                </span>
-                <div class="message-body">
-                  Block-scoped. Can be re-assigned.
-                </div>
-              </article>
-            <pre><code class="language-javascript">let i = 0;</code></pre>
-          </div>
+              <h3 class="title is-3"><%= title %> ¯\_(ツ)_/¯</h3>
+              <%= render(InfoBoxComponent.with_collection(info_boxes)) %>  
+              
+           

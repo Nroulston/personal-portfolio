@@ -1,12 +1,12 @@
 <div class="box">
-  <h4 id="const" class="title is-3"><%= title %></h4>
+  <h4 id="const" class="title is-3"><%= @info_box[:title] %></h4>
   <article class="message is-primary">
     <span class="icon has-text-primary">
     <i class="fab fa-js"></i>
     </span>
     <div class="message-body">
-      <%= body %>
+      <%= @info_box[:body] %>
     </div>
   </article>
-  <pre><code class="language-javascript"><%= javascript %></code></pre>
+  <pre><code class="language-javascript"><%= @info_box[:javascript] %></code></pre>
 </div>
