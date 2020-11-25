@@ -10,12 +10,12 @@ class ContentSectionsComponent < ViewComponent::Base
     {
       about: [{
         javascript: "(coffee) => { return code }",
-        title: "About Me",
-        body: 'Block-scoped. Cannot be re-assigned. Not immutable.'
+        title: "I am a",
+        body: 'Doer, Coder, Father, Husband, Brewer, Developer, Customer Service Enthusiast, Curious Mind '
         },
-        { javascript: "(coffee) => { return code }",
-        title: "const",
-        body: 'Block-scoped. Cannot be re-assigned. Not immutable.'}
+        { javascript: "It's as easy as 0, 10, 11",
+        title: "Achievements",
+        body: 'Bicycled across the country, Associate Produced Award winning documentary, Pivoted Careers, Learned to Code'}
         ],
 
     }
