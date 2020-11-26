@@ -1,0 +1,14 @@
+  <div class="message-body">
+    <%= @info_box[:description] %>
+    <ul>
+      <% @info_box[:what_i_did].each do |what| %>
+        <li><%= what %></li>
+      <% end %>
+    </ul> 
+  </div>
+</article>
+<div class="level ">
+    <span class="level-item has-text-centered"><a href=<%=info_box[:video]%> class="is-active"><i class="fas fa-video"></i> Video Demo</a></span>
+    <span class="level-item has-text-centered"><a href=<%=info_box[:github]%> class="is-active"><i class="fab fa-github"> GitHub Repo</i></a></span>
+</div>
+

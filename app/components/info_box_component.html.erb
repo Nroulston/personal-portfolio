@@ -1,10 +1,14 @@
 
 <div class="box">
-  <h4 id="const" class="title is-3"><%= @info_box[:title] %></h4>
+  <h4 id="const" class="title is-3"><%= info_box[:title] %></h4>
   <article class="message is-primary">
-    <div class="message-body">
-      <%= @info_box[:body] %>
-    </div>
-  </article>
+    <% if section == :about %>
+        <div class="message-body">
+          <%= info_box[:body] %>
+        </div>
+      </article>
+    <% elsif section == :projects %>
+      <%= render(ProjectBoxComponent.new(info_box: @info_box)) %>
+    <% end %> 
   <pre><code class="language-javascript"><%= @info_box[:javascript] %></code></pre>
 </div>

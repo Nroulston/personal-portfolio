@@ -1,6 +1,7 @@
 
-            <div class="content is-medium">
+           <div class="content is-medium">
               <h3 class="title is-3"><%= title %></h3>
-              <%= render(InfoBoxComponent.with_collection(info_boxes[section])) %>  
-              
+
+                <%= render(InfoBoxComponent.with_collection(info_boxes[section], section: section)) %>  
+         
            
