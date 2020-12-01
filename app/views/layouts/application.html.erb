@@ -39,18 +39,38 @@
             categories
           </p>
           <ul class="menu-list">
-            <li ><a href="#about" class="is-active"><i class="far fa-address-card"></i></i> About</a></li>
-            <li ><a href="#projects" class="is-active"><i class="fas fa-code"></i></i>  Projects</a></li>
-            <li><a href="#resume" class="is-active"><i class="far fa-file-alt"></i></i> JSON Resume</a></li>
+            <li >
+              <%= link_to root_path, class: "is-active" do %>
+                <i class="far fa-address-card"></i> About<% end %> 
+            </li>
+            <li >
+              <%= link_to projects_path, class: "is-active" do %>
+                <i class="fas fa-code"></i> Projects<% end %> 
+            </li>
+            <li >
+              <%= link_to resume_path, class: "is-active" do %>
+                <i class="far fa-file-alt"></i> JSON Resume<% end %> 
+            </li>
           </ul>
           <p class="menu-label">
             Links
           </p>
           <ul class="menu-list">
-            <li><a href="#projects" class="tag is-white is-medium"> GitHub</a></li>
-            <li><a href="#projects" class="tag is-white is-medium"></i> Blog</a></li>
-            <li><a href="#projects" class="tag is-white is-medium"></i> bitSized Good</a></li>
-            
+           <li >
+              <%= link_to "https://github.com/nroulston", class: "tag is-white is-medium" do %>
+               GitHub
+               <% end %> 
+            </li>
+           <li >
+              <%= link_to "https://www.linkedin.com/in/nico-roulston/", class: "tag is-white is-medium" do %>
+               LinkedIn
+               <% end %> 
+            </li>
+           <li >
+              <%= link_to nil, class: "tag is-white is-medium" do %>
+               BitSized Good
+               <% end %> 
+            </li>
           </ul>
         </div>
       </div>
