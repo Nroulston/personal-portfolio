@@ -1,63 +1,37 @@
 
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-3 ">
-            <div class="is-medium menu sticky">
-              <p class="menu-label">
-                categories
-              </p>
-              <ul class="menu-list">
-                <li ><a href="#about" class="is-active"><i class="far fa-address-card"></i></i> About</a></li>
-                <li ><a href="#projects" class="is-active"><i class="fas fa-code"></i></i>  Projects</a></li>
-                <li><a href="#resume" class="is-active"><i class="far fa-file-alt"></i></i> JSON Resume</a></li>
-              </ul>
-              <p class="menu-label">
-                Links
-              </p>
-              <ul class="menu-list">
-                <li><a href="#projects" class="tag is-white is-medium"> GitHub</a></li>
-                <li><a href="#projects" class="tag is-white is-medium"></i> Blog</a></li>
-                <li><a href="#projects" class="tag is-white is-medium"></i> bitSized Good</a></li>
-               
-              </ul>
-            </div>
-          </div>
-          <div class="column is-9">
-            <div class="box" id='intro-video'>
-              <h4 id="const" class="title is-3">Video introduction</h4>
-              <article class="message is-primary">
-                
-                <div class="message-body level ">
-                  <iframe class="level-item has-text-centered" width="490" height="275" src="https://res.cloudinary.com/project1000hires/video/upload/v1604353331/Nico_Roulston_ea7df8be51.mp4" frameborder="0" allowfullscreen type="video/mp4"></iframe>
-                </div>
-                
-              </article>
-            </div>
-            <div id='about'>
-            <%= render(ContentSectionsComponent.new(section: :about, title: "Who is Nico? ¯\\_(ツ)_/¯"
-            )) %>
-            </div>
-           
+
+      <div class="column is-9">
+        <div class="box" id='intro-video'>
+          <h4 id="const" class="title is-3">Video introduction</h4>
+          <article class="message is-primary">
             
-          <h3 class="title is-3">More to Come...</h3>
-          
-      </div>
-      </div>
-      </div>
-      </div>
-    </section>
+            <div class="message-body level ">
+              <iframe class="level-item has-text-centered" width="490" height="275" src="https://res.cloudinary.com/project1000hires/video/upload/v1604353331/Nico_Roulston_ea7df8be51.mp4" frameborder="0" allowfullscreen type="video/mp4"></iframe>
+            </div>
+            
+          </article>
+        </div>
+        <div id='about'>
+        <%= render(ContentSectionsComponent.new(section: :about, title: "Who is Nico? ¯\\_(ツ)_/¯"
+        )) %>
+        </div>
+        
+      
+      <h3 class="title is-3">More to Come...</h3>
+    </div> 
+        
+</section>
 <footer class="footer">
 
 <hr>
 <div class="columns is-mobile is-centered">
-  <div class="field is-grouped is-grouped-multiline">
-    <div class="control">
-      <div class="tags has-addons"><a class="tag is-link" href="https://github.com/BulmaTemplates/bulma-templates">Bulma Templates</a>
-      <span class="tag is-info">MIT license</span>
-    </div>
-  </div>
-  
+<div class="field is-grouped is-grouped-multiline">
+<div class="control">
+  <div class="tags has-addons"><a class="tag is-link" href="https://github.com/BulmaTemplates/bulma-templates">Bulma Templates</a>
+  <span class="tag is-info">MIT license</span>
+</div>
+</div>
+
 </div>
 </div>
 
