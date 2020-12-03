@@ -62,3 +62,7 @@ end
 gem "stimulus_reflex", "~> 3.3"
 
 gem "cable_ready", "~> 4.4"
+
+gem "hiredis", "~> 0.6.3"
+
+gem "redis-session-store", "~> 0.11.3"
