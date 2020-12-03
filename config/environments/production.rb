@@ -55,16 +55,11 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   config.cache_store = :redis_cache_store, {driver: :hiredis, url: ENV.fetch("REDIS_URL")}
-  config.session_store :redis_session_store, {
-    key: Rails.application.credentials.app_session_key,
-    serializer: :json,
-    redis: {
-      expire_after: 1.year,
-      ttl: 1.year,
-      key_prefix: "app:session:",
-      url: ENV.fetch("HEROKU_REDIS_MAROON_URL")
-    }
-  }
+   config.session_store :cache_store,
+     key: "_session",
+     compress: true,
+     pool_size: 5,
+     expire_after: 1.year
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "personal_portfolio_production"
