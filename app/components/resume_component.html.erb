@@ -1,0 +1,18 @@
+
+<div class="box">
+  <h4  class="title is-4">Prettified JSON</h4>
+  <article class="message ">
+    <pre class='message-body pre-json'> 
+      <% if resume_style == "json"%>
+        <%=JSON.pretty_generate(resume_info) %>
+      <% else %>
+       
+        <div class="resp-container">
+
+
+          <iframe class="resp-iframe" src=<%="http://registry.jsonresume.org/nroulston?theme=#{resume_style}" %>   sandbox=''></iframe>
+        </div>
+      <% end %>
+    </pre>
+  </article> 
+</div>

@@ -10,21 +10,24 @@
       </div>
     </article>
     <pre class='columns is-mobile is-variable is-3'>
-      <button class="column button is-info is-light"> This </button>
-      <button class="column button is-info "> This </button>
-      <button class="column button is-info is-light"> This </button>
-      <button class="column button is-info "> This </button>
- 
+      <button class="column button is-info is-light" data-id="json" data-reflex="click->resume#json">JSON</button>
+      <button class="column button is-info" data-id="short" data-reflex="click->resume#json"> Short Theme </button>
+      <button class="column button is-info is-light" data-id="classy" data-reflex="click->resume#json"> Classy Theme </button>
+      <button class="column button is-info" data-id="slick" data-reflex="click->resume#json"> Slick Theme </button>
     </pre>
- 
- 
-  <div class="box"> 
-   <iframe 
+  </div>
+  <div id="resume" >
+    <div class="box"> 
+      I think this is awesome. I hope you do to. Stimulus Reflex will replace only this box reactively when you switch between the resume options. No refreshes!
+    </div>
+  </div>
+  <%# <div class="box" > 
+   <iframe .
     width="100%"
     height="350"    
     src="data:text/html;charset=utf-8,
     <head><base target='_blank' /></head>
     <body><script src='https://gist.github.com/Nroulston/76e5cc658063c66f2393eb961066bb52.js'></script>
     </body>">
-  </div>
+  </div> %>
 </div>
