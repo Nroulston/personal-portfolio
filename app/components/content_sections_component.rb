@@ -11,15 +11,18 @@ class ContentSectionsComponent < ViewComponent::Base
       about: [{
         javascript: "(coffee) => { return code }",
         title: "I am a",
-        body: 'Doer, Coder, Father, Husband, Brewer, Developer, Customer Service Enthusiast, Curious Mind, Volunteer '
+        body: 'Doer, Coder, Father, Husband, Brewer, Customer Service Enthusiast, Curious Mind, Volunteer'
         },
-        { javascript: "It's as easy as 0, 10, 11",
-        title: "Achievements",
-        body: 'Bicycled across the country, Associate Produced Award winning documentary, Pivoted Careers, Learned to Code'}
+        { javascript: "['hip','hip'] // Hip Hip array!",
+        title: "What I do",
+        body: 'I dive into life with zeal! I can code up a storm, learn new gems, libraries and languages quickly, all while playing nicely with teams. I currently work with Ruby, Rails, React, and Redux, and some cool server side rendering magic(Stimulus, StimulusReflex, CableReady)'},
+        { javascript: "#tower-of-piza { font-style: italic;}",
+        title: "Accomplishments",
+        body: 'Bicycled across the country, associate produced an award winning documentary, owned a succesful bakery/cafe for 5 years,  brewed for the Great American Beer Festival, pivoted careers, learned to code, and founded BitSized Good'}
         ],
       projects: [
         {
-          javascript: "#tower-of-piza { font-style: italic; }",
+          javascript: "It's as easy as 0, 10, 11",
           title: "VUI-BrewTracker",
           description: "An SPA tool to help track brew day metrics with a voice user interface(VUI).",
           what_i_did: [
