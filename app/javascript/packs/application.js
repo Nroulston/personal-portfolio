@@ -8,6 +8,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import "../src/index"
+
 import "./custom"
 import 'bulma'
 
@@ -20,3 +22,6 @@ import 'bulma'
 // const imagePath = (name) => images(name, true)
 import "channels"
 import "controllers"
+
+
+     

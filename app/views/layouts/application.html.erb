@@ -4,9 +4,12 @@
     <title>PersonalPortfolio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+   
+    
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -79,30 +82,5 @@
   </body>
 
 
-    
-<script>
-  document.addEventListener('turbolinks:load', () => {
-    
-    const divs = document.querySelectorAll(".menu-list");
-    if (window.innerWidth < 768){
-    divs.forEach(div => div.classList.add("tags"));
-    }
-    else {
-      divs.forEach(div => div.classList.remove("tags"));
-    }
-  })
-</script> 
-<script>
-  
-  window.addEventListener('resize', () => {
-  
-  const divs = document.querySelectorAll(".menu-list");
-  if (window.innerWidth < 768){
-    divs.forEach(div => div.classList.add("tags"));
-  }
-  else {
-    divs.forEach(div => div.classList.remove("tags"));
-  }
-});
-</script> 
+ 
 </html>
