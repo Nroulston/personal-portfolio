@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  default_form_builder BulmaFormBuilder
+
   def index
     
   end
@@ -9,5 +11,9 @@ class ApplicationController < ActionController::Base
 
   def resume
     
+  end
+
+  def contact
+
   end
 end
