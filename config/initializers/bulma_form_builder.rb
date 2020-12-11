@@ -24,6 +24,17 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
       super(method, merge_class(options, 'input')) + email_icon
     end
   end
+  
+  def div_radio_button(method, tag_value, options = {})
+  
+      @template.content_tag :div, class: "control" do 
+        @template.radio_button(
+          @object_name, method, tag_value, objectify_options(options)
+        
+        
+      )
+    end
+  end
 
   # Email field with an icon, plus the label for it
   def email_field_with_label(method, options = {})

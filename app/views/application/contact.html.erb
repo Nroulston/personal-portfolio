@@ -11,12 +11,37 @@
           <%= f.email_field_with_label "email" %>
         </div>
 
+
+<div class="field">
+  <label class="label">Label</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Text input">
+  </div>
+  <p class="help">This is a help text</p>
+</div>
+
     
 
         <div class="actions">
           <%= f.submit_primary "Send Email" %>
         </div>
       <% end %>
+
+      <%= form_with  do |f| %>
+  I am a child: <%= f.div_radio_button(:admin, "child", ) %>
+  I am an adult: <%= f.div_radio_button(:admin, "adult") %>
+<% end -%>
+
+<div class="control">
+  <label class="radio">
+    <input type="radio" name="answer">
+    Yes
+  </label>
+  <label class="radio">
+    <input type="radio" name="answer">
+    No
+  </label>
+</div>
 
 
     </div>
