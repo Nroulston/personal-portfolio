@@ -13,6 +13,10 @@
           <%= f.email_field_with_label :email %>
         </div>
 
+        <div class='field'>
+          <%= f.text_area_with_label :extra_info, placeholder: "Questions for me, funny jokes, and feedback are all welcome" %>
+        </div>
+
         <div class="actions">
           <%= f.submit_primary "Send Email" %>
         </div>

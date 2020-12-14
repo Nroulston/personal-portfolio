@@ -17,6 +17,14 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     label_default(method) + text_field(method, options)
   end
 
+  def text_area(method, options = {})
+    super(method,merge_class(options, 'textarea'))
+  end
+
+  def text_area_with_label(method, options={})
+    label_default(method) + text_area(method, options)
+  end
+
   # Email field with an icon
   def email_field(method, options = {})
     div_control_for_icons do
