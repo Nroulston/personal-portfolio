@@ -1,5 +1,3 @@
-# Form builder for Bulma
-# Reference: https://bulma.io/documentation/form/
 class BulmaFormBuilder < ActionView::Helpers::FormBuilder
   # Label for most types of input tags (text, password, email...)
   def label_default(method, text = nil, options = {}, &block)
@@ -22,17 +20,6 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
   def email_field(method, options = {})
     div_control_for_icons do
       super(method, merge_class(options, 'input')) + email_icon
-    end
-  end
-  
-  def div_radio_button(method, tag_value, options = {})
-  
-      @template.content_tag :div, class: "control" do 
-        @template.radio_button(
-          @object_name, method, tag_value, objectify_options(options)
-        
-        
-      )
     end
   end
 

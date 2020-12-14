@@ -14,6 +14,6 @@ class ApplicationController < ActionController::Base
   end
 
   def contact
-
+   @contact = Contact.new
   end
 end
