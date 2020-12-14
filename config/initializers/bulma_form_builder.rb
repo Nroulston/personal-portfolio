@@ -10,11 +10,13 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
   end
 
   def text_field(method, options = {})
-    super(method, merge_class(options, 'input'))
+    div_control_for_icons do
+      super(method, merge_class(options, 'input')) + user_icon
+    end
   end
 
   def text_field_with_label(method, options = {})
-    label_default(method) + text_field(method, options)
+    label_default(method) + text_field(method, options) 
   end
 
   def text_area(method, options = {})
@@ -120,6 +122,12 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
   def password_icon
     @template.content_tag(:span, class: 'icon is-left') do
       @template.content_tag(:i, "", class: 'fas fa-lock')
+    end
+  end
+
+  def user_icon
+    @template.content_tag(:span, class: 'icon is-left') do
+      @template.content_tag(:i, "", class: 'fas fa-user-astronaut')
     end
   end
 end
