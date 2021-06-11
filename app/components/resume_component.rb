@@ -43,10 +43,10 @@ class ResumeComponent < ViewComponent::Base
       position: "Founder",
       url: "https://bit-sized-good.herokuapp.com/",
       startDate: "2020-11-05",
+      endDate: "2021-6-10"
       summary: "BitSized Good currently helps nonprofits redesign/build their websites using the skills of recently graduated techies. The mutually beneficial relationship of nonprofits who need skilled help, and recent grads needing real world team experience is a natural symbiosis. As a newly formed organization BitSized Good is starting small with website and as it matures will move into solving larger technological problems for nonprofits.",
       highlights: [
       "Building an internal volunteer and project management web app",
-      "Currently in UI/UX discovery for Kids In Tech",
       "Organized 25 UI/UX and Developer graduates into interdisciplinary teams to work on multiple projects to try and give experience to all."
       ]
       },
